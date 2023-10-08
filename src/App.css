@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     background-color: #090A0E;
     color:white;
@@ -9,23 +13,127 @@ body{
 }
 
 .header{
+    padding: 0 3em;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: 'Dela Gothic One', cursive;    
+    color: rgb(201, 135, 255);
+}
+.header span{
+    font-size: 3em;
+}
+.header form{
+    display: flex;
+    align-items: center;
+    gap: 0.5em
+}
+
+.header input{
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 20px;
+    border-radius: 0.3em;
+    color: white;
+    padding-left: 10px;
+}
+.header button{
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    padding: 0.2em;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+
+.trending{
+    margin: 1em 2em;
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 90vw;
     margin-left: auto;
     margin-right: auto;
     padding: 15px;
-    background-color: #0f1014;
+    background-color: #191b21;
     display:grid;
     gap: 15px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border-radius: 3.5vh;
+
 }
 
 .movie-cover{
     width: 100%;
+    border-radius: 2vh;
+}
+
+.movie-placeholder{
+    aspect-ratio: 2/3;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(61, 66, 71);
+    font-weight: 400;
+    border-radius: 2vh;
+}
+
+.hero{
+    min-height: 500px;
+    background-position: top center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+ 
+
+}
+
+.hero-title{
+    font-size: 72px;
+    position: relative; 
+    z-index: 1;
+}
+.hero-overview{
+    position: relative;
+    z-index:1;
+}
+
+
+.hero-content{
+    max-width: 90vw;
+    margin-left: 2.4em;
+    margin-right: 2.4em;
+    padding-bottom: 1.5em;
+    padding-left: 1em;
+}
+
+.black-grad{
+    position: absolute;
+    left: 0;
+    height: 25%;
+    background:linear-gradient(to bottom, rgba(225,225,225,0), rgb(0, 0, 0));
+    width: 100%;
+    z-index: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.button{
+    background-color: #0F1014;
+    color:white;
+    border:1px solid white;
+    padding: 10px 15px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0.5em;
+    transition: ease 500ms;
+    z-index: 1;
+    position: relative;
+}
+
+.button:hover{
+    background-color: rgb(201, 135, 255);
+    color: #0F1014;
+    box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.611);
 }
