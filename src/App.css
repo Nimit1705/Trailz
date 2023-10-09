@@ -85,8 +85,7 @@ body{
     background-size: cover;
     display: flex;
     align-items: flex-end;
- 
-
+    position: relative;
 }
 
 .hero-title{
@@ -106,6 +105,7 @@ body{
     margin-right: 2.4em;
     padding-bottom: 1.5em;
     padding-left: 1em;
+    position: relative;
 }
 
 .black-grad{
@@ -117,6 +117,34 @@ body{
     z-index: 0;
     padding: 0;
     margin: 0;
+}
+
+/* .youtube-container{
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+
+} */
+
+.youtube-container{
+
+    height: 70vh;
+    width: 95vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.close{
+    margin-top: 1vh;
+    margin-left: 48vw;
+    z-index: 4;
+    position: absolute;
 }
 
 .button{
@@ -137,3 +165,4 @@ body{
     color: #0F1014;
     box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.611);
 }
+
