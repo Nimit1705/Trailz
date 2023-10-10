@@ -142,6 +142,7 @@ body{
 
 .close{
     margin-top: 1vh;
+    margin-bottom: 1vh;
     margin-left: 48vw;
     z-index: 4;
     position: absolute;

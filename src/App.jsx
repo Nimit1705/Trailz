@@ -65,14 +65,18 @@ const App = () => {
 
   const renderTrailer = () => {
     const trailer = selectMovie.videos.results.find(vid => vid.name === 'Official Trailer')
+    const key = trailer ? trailer.key : selectMovie.videos.results[1].key
     return (
       <>
       <YouTube 
-        videoId= {trailer.key}
+        videoId= {key}
         className = {"youtube-container"}
         opts = {{
           height:"100%",
-          width:"100%"
+          width:"100%",
+          playerVars:{
+            autoplay: 1,
+          }
         }}
       />
       
@@ -100,7 +104,7 @@ const App = () => {
         <div className='black-grad'></div>
       </div>
       {playTrailer ? <button onClick={() => setPlayTrailer(false)} className=" button close">close</button> : null}
-      <h2 className='trending'>Trending Movies</h2>
+      
 
       <div className="container">
         {renderMovies()}
