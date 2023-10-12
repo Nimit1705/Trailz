@@ -9,7 +9,7 @@ body{
     background-color: #090A0E;
     color:white;
     font-family: 'Kanit', sans-serif;
-    
+    font-weight: normal;
 }
 
 .header{
@@ -119,15 +119,6 @@ body{
     margin: 0;
 }
 
-/* .youtube-container{
-    position: absolute;
-    z-index: 0;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    margin: 0;
-
-} */
 
 .youtube-container{
 
@@ -149,7 +140,7 @@ body{
 }
 
 .button{
-    background-color: #0F1014;
+    background-color: #121317;
     color:white;
     border:1px solid white;
     padding: 10px 15px;

@@ -79,13 +79,12 @@ const App = () => {
           }
         }}
       />
-      
       </>
     )
   }
 
   return (
-    <div className =' App'>
+    <div className ='App'>
       <header className={'header'}>
         <span>Trailz</span>
         <form onSubmit={searchMovies}>
